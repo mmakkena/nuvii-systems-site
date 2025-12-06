@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #1F2A36;
+  --primary: #0BA6E2;
+  --primary-dark: #0061C2;
+  --secondary: #0061C2;
+
+  --primary-accent: #0061C2;
+  --foreground-accent: #64748B;
+  --hero-background: #F3F7FB;
+
+  /* Nuvii brand tokens */
+  --nuvii-text-900: #1F2A36;
+  --nuvii-bg: #FFFFFF;
+  --nuvii-blue: #0BA6E2;
+  --nuvii-teal: #0061C2;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply text-lg;
+
+  color: var(--foreground);
+  background: var(--background);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+@layer components {
+  .bg-nuvii-gradient {
+    background-image: linear-gradient(135deg, #0BA6E2, #0061C2);
+  }
+  .text-nuvii {
+    color: var(--nuvii-text-900);
+  }
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    padding: 14px 28px;
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: white;
+    background-image: linear-gradient(135deg, #0BA6E2, #0061C2);
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
+  }
+  .btn-primary:hover:not(:disabled) {
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+    box-shadow: 0 10px 25px rgba(11, 166, 226, 0.3);
+  }
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    padding: 14px 28px;
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: var(--nuvii-text-900);
+    background: #F3F7FB;
+    transition: all 0.2s;
+    border: 2px solid transparent;
+    cursor: pointer;
+  }
+  .btn-secondary:hover {
+    background: #E5EDF5;
+    border-color: var(--nuvii-blue);
+  }
+}
