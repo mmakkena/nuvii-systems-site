@@ -17,7 +17,7 @@ export default function Pricing() {
         <div className="max-w-3xl mx-auto bg-hero-background rounded-2xl p-10 border border-gray-200">
           <div className="text-center mb-8">
             <p className="text-lg text-foreground-accent leading-relaxed">
-              Nuvii CDI Agent is deployed as a private instance tailored to your organization's needs — whether in your own VPC, on-premise infrastructure, or air-gapped environment. Pricing reflects deployment complexity, data volume, and integration requirements.
+              Nuvii CDI Agent is deployed as a private instance tailored to your organization&apos;s needs — whether in your own VPC, on-premise infrastructure, or air-gapped environment. Pricing reflects deployment complexity, data volume, and integration requirements.
             </p>
           </div>
 
