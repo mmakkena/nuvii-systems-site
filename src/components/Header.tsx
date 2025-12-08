@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Header() {
   const [productOpen, setProductOpen] = useState(false);
@@ -13,7 +14,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <a href="/" className="flex items-center gap-3">
+            <Link href="/" className="flex items-center gap-3">
               <Image
                 src="/nuvii_logo.png"
                 alt="Nuvii Systems Logo"
@@ -25,7 +26,7 @@ export default function Header() {
               <span className="text-2xl font-bold bg-nuvii-gradient bg-clip-text text-transparent">
                 Nuvii Systems
               </span>
-            </a>
+            </Link>
           </div>
 
           {/* Navigation */}
