@@ -1,0 +1,210 @@
+'use client';
+
+import { useState } from 'react';
+
+export default function DemoForm() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    organization: '',
+    role: '',
+    organizationType: '',
+    timeline: '',
+    deploymentPreference: '',
+  });
+
+  const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    // TODO: Add actual form submission logic (e.g., API call)
+    // For now, just simulate submission
+    await new Promise(resolve => setTimeout(resolve, 1000));
+
+    console.log('Demo request submitted:', formData);
+    setSubmitted(true);
+    setIsSubmitting(false);
+  };
+
+  if (submitted) {
+    return (
+      <div className="bg-green-50 border border-green-200 rounded-xl p-8 text-center">
+        <div className="text-green-600 text-5xl mb-4">✓</div>
+        <h3 className="text-2xl font-bold text-nuvii-text mb-4">
+          Thanks — your request has been received.
+        </h3>
+        <p className="text-lg text-foreground-accent mb-6">
+          Our team will review your request and follow up to schedule an enterprise-focused demo covering deployment, security, and workflow fit.
+        </p>
+        <p className="text-foreground-accent">
+          While you wait, explore evaluation APIs →{' '}
+          <a href="https://nuvii.ai" target="_blank" rel="noopener noreferrer" className="text-nuvii-blue hover:underline font-semibold">
+            nuvii.ai
+          </a>
+        </p>
+      </div>
+    );
+  }
+
+  return (
+    <form onSubmit={handleSubmit} className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm">
+      <div className="space-y-6">
+        {/* Name */}
+        <div>
+          <label htmlFor="name" className="block text-sm font-semibold text-nuvii-text mb-2">
+            Name *
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            value={formData.name}
+            onChange={handleChange}
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-nuvii-blue focus:border-transparent outline-none transition-all"
+            placeholder="Your full name"
+          />
+        </div>
+
+        {/* Work Email */}
+        <div>
+          <label htmlFor="email" className="block text-sm font-semibold text-nuvii-text mb-2">
+            Work Email *
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            value={formData.email}
+            onChange={handleChange}
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-nuvii-blue focus:border-transparent outline-none transition-all"
+            placeholder="you@company.com"
+          />
+        </div>
+
+        {/* Organization */}
+        <div>
+          <label htmlFor="organization" className="block text-sm font-semibold text-nuvii-text mb-2">
+            Organization *
+          </label>
+          <input
+            type="text"
+            id="organization"
+            name="organization"
+            required
+            value={formData.organization}
+            onChange={handleChange}
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-nuvii-blue focus:border-transparent outline-none transition-all"
+            placeholder="Your organization name"
+          />
+        </div>
+
+        {/* Role */}
+        <div>
+          <label htmlFor="role" className="block text-sm font-semibold text-nuvii-text mb-2">
+            Role *
+          </label>
+          <select
+            id="role"
+            name="role"
+            required
+            value={formData.role}
+            onChange={handleChange}
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-nuvii-blue focus:border-transparent outline-none transition-all bg-white"
+          >
+            <option value="">Select your role</option>
+            <option value="engineer">Engineer</option>
+            <option value="cdi">CDI</option>
+            <option value="rcm">RCM</option>
+            <option value="cto">CTO</option>
+            <option value="security">Security</option>
+            <option value="exec">Executive</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        {/* Organization Type */}
+        <div>
+          <label htmlFor="organizationType" className="block text-sm font-semibold text-nuvii-text mb-2">
+            Organization Type *
+          </label>
+          <select
+            id="organizationType"
+            name="organizationType"
+            required
+            value={formData.organizationType}
+            onChange={handleChange}
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-nuvii-blue focus:border-transparent outline-none transition-all bg-white"
+          >
+            <option value="">Select organization type</option>
+            <option value="practice">Practice</option>
+            <option value="group">Group</option>
+            <option value="health-system">Health System</option>
+            <option value="vendor">Vendor</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        {/* Intended Timeline */}
+        <div>
+          <label htmlFor="timeline" className="block text-sm font-semibold text-nuvii-text mb-2">
+            Intended Timeline *
+          </label>
+          <select
+            id="timeline"
+            name="timeline"
+            required
+            value={formData.timeline}
+            onChange={handleChange}
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-nuvii-blue focus:border-transparent outline-none transition-all bg-white"
+          >
+            <option value="">Select timeline</option>
+            <option value="0-30">0–30 days</option>
+            <option value="30-90">30–90 days</option>
+            <option value="exploring">Exploring</option>
+          </select>
+        </div>
+
+        {/* Deployment Preference */}
+        <div>
+          <label htmlFor="deploymentPreference" className="block text-sm font-semibold text-nuvii-text mb-2">
+            Deployment Preference *
+          </label>
+          <select
+            id="deploymentPreference"
+            name="deploymentPreference"
+            required
+            value={formData.deploymentPreference}
+            onChange={handleChange}
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-nuvii-blue focus:border-transparent outline-none transition-all bg-white"
+          >
+            <option value="">Select deployment preference</option>
+            <option value="vpc">VPC</option>
+            <option value="on-prem">On-Prem</option>
+            <option value="not-sure">Not sure</option>
+          </select>
+        </div>
+
+        {/* Submit Button */}
+        <button
+          type="submit"
+          disabled={isSubmitting}
+          className="w-full btn-primary text-lg py-4 disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          {isSubmitting ? 'Submitting...' : 'Request Enterprise Demo'}
+        </button>
+      </div>
+    </form>
+  );
+}

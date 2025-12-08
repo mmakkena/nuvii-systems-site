@@ -1,10 +1,10 @@
 export default function Security() {
   return (
-    <section className="py-20 bg-hero-background">
+    <section id="security" className="py-12 bg-hero-background">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-nuvii-text mb-6">
-            Security & Deployment
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-nuvii-text mb-6">
+            Built for Regulated Healthcare Environments
           </h2>
           <p className="text-xl text-foreground-accent max-w-3xl mx-auto">
             Security-first, HIPAA-ready architecture designed by Nuvii Systems
@@ -17,26 +17,28 @@ export default function Security() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <span className="text-nuvii-blue text-2xl">✓</span>
-                <div className="text-lg text-nuvii-text">
-                  <strong>Zero PHI egress</strong> — data never leaves your environment
+                <div>
+                  <h3 className="text-lg font-bold text-nuvii-text">Zero PHI Egress Deployment</h3>
+                  <p className="text-base text-foreground-accent">Data never leaves your environment</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-nuvii-blue text-2xl">✓</span>
-                <div className="text-lg text-nuvii-text">
-                  <strong>On-prem, VPC, or air-gapped deployment</strong>
+                <div>
+                  <h3 className="text-lg font-bold text-nuvii-text">On-Prem, VPC, or Air-Gapped Deployment</h3>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-nuvii-blue text-2xl">✓</span>
-                <div className="text-lg text-nuvii-text">
-                  <strong>Explainable AI with audit-friendly outputs</strong>
+                <div>
+                  <h3 className="text-lg font-bold text-nuvii-text">Explainable AI Outputs</h3>
+                  <p className="text-base text-foreground-accent">Audit-friendly outputs for compliance review</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-nuvii-blue text-2xl">✓</span>
-                <div className="text-lg text-nuvii-text">
-                  <strong>Customer-controlled models & data</strong>
+                <div>
+                  <h3 className="text-lg font-bold text-nuvii-text">Customer-Controlled Models & Data</h3>
                 </div>
               </li>
             </ul>

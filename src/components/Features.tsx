@@ -45,18 +45,14 @@ export default function Features() {
   ];
 
   return (
-    <section id="features" className="py-20 bg-white">
+    <section id="features" className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-nuvii-text mb-6">
-            Key Product Modules
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-nuvii-text mb-6">
+            AI-Powered Clinical Documentation Improvement & Medical Coding
           </h2>
           <p className="text-xl text-nuvii-text font-semibold mb-4">
             A single AI platform designed to understand clinical intent, improve documentation, and optimize compliant revenue.
-          </p>
-          <p className="text-lg text-foreground-accent max-w-3xl mx-auto">
-            A deployable AI agent from Nuvii Systems that automates clinical documentation
-            and medical coding workflows
           </p>
         </div>
 

@@ -17,8 +17,8 @@ export default function WhyNuvii() {
     },
     {
       icon: "🚀",
-      title: "Flexible Deployment",
-      description: "Use as SaaS, VPC, or fully on-prem."
+      title: "Flexible & Fast Deployment",
+      description: "Deploy in managed environments, private VPC, or fully on-prem — and go live in days, not months."
     },
     {
       icon: "🧾",
@@ -29,20 +29,15 @@ export default function WhyNuvii() {
       icon: "🧩",
       title: "Modular & Extensible",
       description: "Use one module or the entire CDI intelligence platform."
-    },
-    {
-      icon: "⚡",
-      title: "Fast Implementation",
-      description: "Go live in days — not months."
     }
   ];
 
   return (
-    <section className="py-20 bg-hero-background">
+    <section className="py-12 bg-hero-background">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-nuvii-text mb-6">
-            Why Nuvii Systems?
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-nuvii-text mb-6">
+            Why Nuvii Systems
           </h2>
         </div>
 

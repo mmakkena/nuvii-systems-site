@@ -23,11 +23,11 @@ export default function Architecture() {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-nuvii-text mb-6">
-            Designed for Regulated Healthcare Environments
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-nuvii-text mb-6">
+            Healthcare AI Security, Compliance & Auditability
           </h2>
         </div>
 
@@ -38,7 +38,7 @@ export default function Architecture() {
               className="bg-hero-background p-8 rounded-2xl border border-gray-100"
             >
               <div className="text-5xl mb-4">{principle.icon}</div>
-              <h3 className="text-2xl font-bold text-nuvii-text mb-3">
+              <h3 className="text-xl font-bold text-nuvii-text mb-3">
                 {principle.title}
               </h3>
               <p className="text-foreground-accent text-lg">

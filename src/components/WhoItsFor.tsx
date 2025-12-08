@@ -31,7 +31,7 @@ export default function WhoItsFor() {
 
         <div className="text-center">
           <p className="text-lg text-nuvii-text font-semibold">
-            Built for environments where compliance, auditability, and control are non-negotiable.
+            Supporting teams accountable for clinical accuracy, compliant reimbursement, and audit readiness.
           </p>
         </div>
       </div>

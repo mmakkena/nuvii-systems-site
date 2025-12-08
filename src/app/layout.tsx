@@ -2,9 +2,31 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Nuvii CDI Agent - AI-Powered Clinical Documentation & Medical Coding",
-  description: "Reduce coding errors, close documentation gaps, and optimize revenue with Nuvii CDI Agent. HIPAA-ready, on-prem support, secure AI automation for healthcare.",
-  keywords: "CDI, clinical documentation improvement, medical coding, ICD-10, CPT, healthcare AI, HIPAA, revenue cycle management",
+  metadataBase: new URL('https://nuviisystems.com'),
+  title: "Deployable Healthcare AI Platform for CDI & Coding | Nuvii Systems",
+  description: "Deployable healthcare AI platform for clinical documentation, medical coding, and revenue integrity. On-prem and VPC deployment with zero PHI egress.",
+  keywords: "deployable healthcare AI, CDI, clinical documentation improvement, medical coding, revenue integrity, zero PHI egress, on-prem deployment, VPC deployment, Medicare, primary care, HIPAA compliant, healthcare automation",
+  openGraph: {
+    title: "Deployable Healthcare AI Platform for CDI & Coding | Nuvii Systems",
+    description: "Deployable healthcare AI platform for clinical documentation, medical coding, and revenue integrity. On-prem and VPC deployment with zero PHI egress.",
+    url: "https://nuviisystems.com",
+    siteName: "Nuvii Systems",
+    type: "website",
+    images: [
+      {
+        url: "/nuvii_logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Nuvii Systems - Deployable Healthcare AI",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Deployable Healthcare AI Platform for CDI & Coding | Nuvii Systems",
+    description: "Deployable healthcare AI platform for clinical documentation, medical coding, and revenue integrity. On-prem and VPC deployment with zero PHI egress.",
+    images: ["/nuvii_logo.png"],
+  },
 };
 
 export default function RootLayout({
@@ -12,8 +34,96 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Nuvii Systems",
+    "url": "https://nuviisystems.com",
+    "logo": "https://nuviisystems.com/nuvii_logo.png",
+    "description": "Deployable healthcare AI platform for clinical documentation, medical coding, and revenue integrity",
+    "industry": "Healthcare Technology",
+    "foundingDate": "2024",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Sales",
+      "url": "https://nuviisystems.com/demo"
+    },
+    "sameAs": [
+      "https://nuvii.ai"
+    ]
+  };
+
+  const softwareApplicationSchema = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Nuvii CDI Agent",
+    "applicationCategory": "HealthcareApplication",
+    "operatingSystem": "Linux, Cloud",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Enterprise pricing based on deployment model and usage"
+    },
+    "description": "AI-powered clinical documentation improvement and medical coding platform with zero PHI egress, deployable on-prem, VPC, or air-gapped environments",
+    "featureList": [
+      "Clinical Documentation Improvement (CDI)",
+      "Medical Coding (ICD-10, CPT)",
+      "Revenue Integrity & HCC Optimization",
+      "Zero PHI Egress Deployment",
+      "Explainable AI Outputs",
+      "EHR Integration"
+    ],
+    "screenshot": "https://nuviisystems.com/nuvii_logo.png",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "1"
+    }
+  };
+
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Nuvii CDI Agent",
+    "description": "Deployable healthcare AI platform for clinical documentation, medical coding, and revenue integrity with zero PHI egress",
+    "brand": {
+      "@type": "Organization",
+      "name": "Nuvii Systems"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://nuviisystems.com/demo",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "price": "Contact for pricing",
+        "priceCurrency": "USD"
+      }
+    },
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "Healthcare Organizations, Primary Care Groups, CDI Specialists, Revenue Cycle Leaders"
+    }
+  };
+
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareApplicationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+        />
+      </head>
       <body>{children}</body>
     </html>
   );
