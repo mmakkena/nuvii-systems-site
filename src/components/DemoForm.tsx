@@ -8,9 +8,6 @@ export default function DemoForm() {
     email: '',
     organization: '',
     role: '',
-    organizationType: '',
-    timeline: '',
-    deploymentPreference: '',
   });
 
   const [submitted, setSubmitted] = useState(false);
@@ -79,21 +76,6 @@ export default function DemoForm() {
                 objectTypeId: "0-1",
                 name: "jobtitle",
                 value: formData.role
-              },
-              {
-                objectTypeId: "0-1",
-                name: "organization_type",
-                value: formData.organizationType
-              },
-              {
-                objectTypeId: "0-1",
-                name: "timeline",
-                value: formData.timeline
-              },
-              {
-                objectTypeId: "0-1",
-                name: "deployment_preference",
-                value: formData.deploymentPreference
               }
             ],
             context: {
@@ -215,68 +197,6 @@ export default function DemoForm() {
             <option value="security">Security</option>
             <option value="exec">Executive</option>
             <option value="other">Other</option>
-          </select>
-        </div>
-
-        {/* Organization Type */}
-        <div>
-          <label htmlFor="organizationType" className="block text-sm font-semibold text-nuvii-text mb-2">
-            Organization Type *
-          </label>
-          <select
-            id="organizationType"
-            name="organizationType"
-            required
-            value={formData.organizationType}
-            onChange={handleChange}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-nuvii-blue focus:border-transparent outline-none transition-all bg-white"
-          >
-            <option value="">Select organization type</option>
-            <option value="practice">Practice</option>
-            <option value="group">Group</option>
-            <option value="health-system">Health System</option>
-            <option value="vendor">Vendor</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
-
-        {/* Intended Timeline */}
-        <div>
-          <label htmlFor="timeline" className="block text-sm font-semibold text-nuvii-text mb-2">
-            Intended Timeline *
-          </label>
-          <select
-            id="timeline"
-            name="timeline"
-            required
-            value={formData.timeline}
-            onChange={handleChange}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-nuvii-blue focus:border-transparent outline-none transition-all bg-white"
-          >
-            <option value="">Select timeline</option>
-            <option value="0-30">0–30 days</option>
-            <option value="30-90">30–90 days</option>
-            <option value="exploring">Exploring</option>
-          </select>
-        </div>
-
-        {/* Deployment Preference */}
-        <div>
-          <label htmlFor="deploymentPreference" className="block text-sm font-semibold text-nuvii-text mb-2">
-            Deployment Preference *
-          </label>
-          <select
-            id="deploymentPreference"
-            name="deploymentPreference"
-            required
-            value={formData.deploymentPreference}
-            onChange={handleChange}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-nuvii-blue focus:border-transparent outline-none transition-all bg-white"
-          >
-            <option value="">Select deployment preference</option>
-            <option value="vpc">VPC</option>
-            <option value="on-prem">On-Prem</option>
-            <option value="not-sure">Not sure</option>
           </select>
         </div>
 
