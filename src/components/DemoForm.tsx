@@ -27,13 +27,97 @@ export default function DemoForm() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // TODO: Add actual form submission logic (e.g., API call)
-    // For now, just simulate submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    try {
+      // HubSpot Forms API configuration
+      const HUBSPOT_PORTAL_ID = process.env.NEXT_PUBLIC_HUBSPOT_PORTAL_ID;
+      const HUBSPOT_FORM_ID = process.env.NEXT_PUBLIC_HUBSPOT_FORM_ID;
 
-    console.log('Demo request submitted:', formData);
-    setSubmitted(true);
-    setIsSubmitting(false);
+      if (!HUBSPOT_PORTAL_ID || !HUBSPOT_FORM_ID) {
+        console.error('HubSpot configuration missing. Please set NEXT_PUBLIC_HUBSPOT_PORTAL_ID and NEXT_PUBLIC_HUBSPOT_FORM_ID in .env.local');
+        // For development, just show success message
+        setSubmitted(true);
+        setIsSubmitting(false);
+        return;
+      }
+
+      // Split name into first and last name
+      const nameParts = formData.name.trim().split(' ');
+      const firstName = nameParts[0] || '';
+      const lastName = nameParts.slice(1).join(' ') || firstName;
+
+      // Submit to HubSpot Forms API
+      const response = await fetch(
+        `https://api.hsforms.com/submissions/v3/integration/submit/${HUBSPOT_PORTAL_ID}/${HUBSPOT_FORM_ID}`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            fields: [
+              {
+                objectTypeId: "0-1",
+                name: "firstname",
+                value: firstName
+              },
+              {
+                objectTypeId: "0-1",
+                name: "lastname",
+                value: lastName
+              },
+              {
+                objectTypeId: "0-1",
+                name: "email",
+                value: formData.email
+              },
+              {
+                objectTypeId: "0-1",
+                name: "company",
+                value: formData.organization
+              },
+              {
+                objectTypeId: "0-1",
+                name: "jobtitle",
+                value: formData.role
+              },
+              {
+                objectTypeId: "0-1",
+                name: "organization_type",
+                value: formData.organizationType
+              },
+              {
+                objectTypeId: "0-1",
+                name: "timeline",
+                value: formData.timeline
+              },
+              {
+                objectTypeId: "0-1",
+                name: "deployment_preference",
+                value: formData.deploymentPreference
+              }
+            ],
+            context: {
+              pageUri: typeof window !== 'undefined' ? window.location.href : '',
+              pageName: "Enterprise Demo Request - nuviisystems.com"
+            }
+          })
+        }
+      );
+
+      if (response.ok) {
+        console.log('Demo request submitted successfully to HubSpot');
+        setSubmitted(true);
+      } else {
+        const error = await response.json();
+        console.error('HubSpot submission failed:', error);
+        alert('Submission failed. Please try again or contact us directly at support@nuvii.ai');
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      alert('An error occurred. Please try again or contact us directly at support@nuvii.ai');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (submitted) {
