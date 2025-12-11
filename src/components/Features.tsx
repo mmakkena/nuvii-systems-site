@@ -49,7 +49,7 @@ export default function Features() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-nuvii-text mb-6">
-            AI-Powered Clinical Documentation, Coding & HCC Intelligence
+            AI for Clinical Documentation, Coding & HCC
           </h2>
           <p className="text-xl text-nuvii-text font-semibold mb-4">
             A single AI platform designed to understand clinical intent, improve documentation, and optimize compliant revenue.
