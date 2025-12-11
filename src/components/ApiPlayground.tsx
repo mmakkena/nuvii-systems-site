@@ -5,7 +5,7 @@ export default function ApiPlayground() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-nuvii-text mb-6">
-              Evaluate the Platform with Interactive Demos
+              Evaluate the Platform Live
             </h2>
             <p className="text-xl text-nuvii-text font-semibold mb-4">
               Hands-on evaluation available in a controlled environment
