@@ -3,7 +3,7 @@ export default function Problem() {
     <section className="py-12 bg-hero-background">
       <div className="max-w-7xl mx-auto px-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-nuvii-text mb-8 text-center">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-nuvii-text mb-8 text-center">
             Gaps in Documentation, Coding & Revenue Integrity
           </h2>
 

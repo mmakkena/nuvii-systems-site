@@ -4,7 +4,7 @@ export default function PartnersSection() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-nuvii-text mb-4">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-nuvii-text mb-4">
               Need Implementation Support?
             </h2>
             <p className="text-xl text-nuvii-blue font-semibold">

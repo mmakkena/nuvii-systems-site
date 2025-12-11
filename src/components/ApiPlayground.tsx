@@ -4,7 +4,7 @@ export default function ApiPlayground() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-nuvii-text mb-6">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-nuvii-text mb-6">
               Evaluate the Platform Live
             </h2>
             <p className="text-xl text-nuvii-text font-semibold mb-4">

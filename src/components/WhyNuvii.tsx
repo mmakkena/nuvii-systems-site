@@ -36,7 +36,7 @@ export default function WhyNuvii() {
     <section className="py-12 bg-hero-background">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-nuvii-text mb-6">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-nuvii-text mb-6">
             Why Nuvii Systems
           </h2>
         </div>
