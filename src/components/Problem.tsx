@@ -4,7 +4,7 @@ export default function Problem() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-nuvii-text mb-8 text-center">
-            Problems in Clinical Documentation, Coding & Revenue Integrity
+            Gaps in Documentation, Coding & Revenue Integrity
           </h2>
 
           <div className="grid md:grid-cols-4 gap-4">
