@@ -37,12 +37,12 @@ export default function DemoPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-12">
+      <section className="pt-24 pb-6">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-nuvii-text mb-6 leading-tight">
+          <h1 className="text-3xl md:text-4xl font-bold text-nuvii-text mb-4 leading-tight">
             Request an Enterprise Demo of Nuvii CDI Agent
           </h1>
-          <p className="text-xl md:text-2xl text-foreground-accent mb-8">
+          <p className="text-lg text-foreground-accent mb-4">
             See how Nuvii Systems deploys AI-powered CDI, coding, and revenue intelligence inside your own VPC or on-prem environment — with zero PHI egress.
           </p>
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/90 backdrop-blur-sm rounded-full border border-nuvii-blue/30 shadow-sm">
@@ -54,13 +54,13 @@ export default function DemoPage() {
       </section>
 
       {/* What the Demo Covers */}
-      <section className="py-12 bg-white">
+      <section className="py-6 bg-white">
         <div className="max-w-4xl mx-auto px-6">
-          <div className="mb-8">
-            <h2 className="text-3xl font-bold text-nuvii-text mb-4">
+          <div className="mb-4">
+            <h2 className="text-xl md:text-2xl font-bold text-nuvii-text mb-2">
               What the Demo Covers
             </h2>
-            <p className="text-lg text-foreground-accent mb-6">
+            <p className="text-base text-foreground-accent mb-4">
               This demo is designed for healthcare organizations evaluating production deployment of Nuvii CDI Agent.
             </p>
           </div>
@@ -115,16 +115,16 @@ export default function DemoPage() {
       </section>
 
       {/* Who This Is For */}
-      <section className="py-12 bg-hero-background">
+      <section className="py-6 bg-hero-background">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-nuvii-text mb-6">
+          <h2 className="text-xl md:text-2xl font-bold text-nuvii-text mb-3">
             Who This Is For
           </h2>
-          <p className="text-lg text-foreground-accent mb-6">
+          <p className="text-base text-foreground-accent mb-4">
             This demo is ideal for:
           </p>
 
-          <div className="grid md:grid-cols-2 gap-3 mb-8">
+          <div className="grid md:grid-cols-2 gap-3 mb-4">
             <div className="flex items-center gap-3">
               <svg className="w-5 h-5 text-nuvii-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -173,9 +173,9 @@ export default function DemoPage() {
       </section>
 
       {/* Demo Request Form */}
-      <section className="py-12 bg-white">
+      <section className="py-8 bg-white">
         <div className="max-w-2xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-nuvii-text mb-8 text-center">
+          <h2 className="text-xl md:text-2xl font-bold text-nuvii-text mb-6 text-center">
             Request Your Demo
           </h2>
           <DemoForm />
