@@ -102,9 +102,9 @@ export default function Header() {
 
           {/* CTA Button */}
           <div className="flex items-center gap-4">
-            <a href="/demo" className="btn-primary text-sm md:text-base px-4 md:px-6 py-2 md:py-3">
+            <Link href="/demo" className="btn-primary text-sm md:text-base px-4 md:px-6 py-2 md:py-3">
               Get a Demo
-            </a>
+            </Link>
           </div>
         </div>
       </div>
