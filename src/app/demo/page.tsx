@@ -56,10 +56,30 @@ export default function DemoPage() {
       {/* Demo Request Form */}
       <section className="py-8 bg-white">
         <div className="max-w-2xl mx-auto px-6">
-          <h2 className="text-xl md:text-2xl font-bold text-nuvii-text mb-6 text-center">
-            Request Your Demo
-          </h2>
-          <DemoForm />
+          {/* Interactive Evaluation Link */}
+          <div className="mb-6 text-center">
+            <p className="text-base text-foreground-accent mb-3">
+              Want to try the platform before requesting a demo?
+            </p>
+            <a
+              href="https://nuvii.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-nuvii-blue hover:text-nuvii-teal font-semibold transition-colors"
+            >
+              Try the Interactive Evaluation
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </a>
+          </div>
+
+          <div className="border-t border-gray-200 pt-6">
+            <h2 className="text-xl md:text-2xl font-bold text-nuvii-text mb-6 text-center">
+              Request Your Demo
+            </h2>
+            <DemoForm />
+          </div>
         </div>
       </section>
 
