@@ -54,7 +54,7 @@ export default function PrivacyPage() {
             <section className="bg-white p-8 rounded-xl shadow-sm">
               <h2 className="text-2xl font-bold text-nuvii-text mb-4">Introduction</h2>
               <p className="text-foreground-accent mb-4">
-                Nuvii Systems, Inc. ("Nuvii Systems," "we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard information when you use our healthcare AI platform and services (collectively, the "Services").
+                Nuvii Systems, Inc. (&quot;Nuvii Systems,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard information when you use our healthcare AI platform and services (collectively, the &quot;Services&quot;).
               </p>
               <p className="text-foreground-accent">
                 This Privacy Policy applies to information collected through our website (nuviisystems.com), our platform, and any related services, sales, marketing, or events.
@@ -230,7 +230,7 @@ export default function PrivacyPage() {
 
             {/* Children's Privacy */}
             <section className="bg-white p-8 rounded-xl shadow-sm">
-              <h2 className="text-2xl font-bold text-nuvii-text mb-4">Children's Privacy</h2>
+              <h2 className="text-2xl font-bold text-nuvii-text mb-4">Children&apos;s Privacy</h2>
               <p className="text-foreground-accent">
                 Our Services are not directed to individuals under the age of 18. We do not knowingly collect personal information from children. If you become aware that a child has provided us with personal information, please contact us at <a href="mailto:privacy@nuviisystems.com" className="text-nuvii-blue hover:text-nuvii-teal font-semibold">privacy@nuviisystems.com</a>.
               </p>
@@ -245,7 +245,7 @@ export default function PrivacyPage() {
               <ul className="list-disc list-inside space-y-2 text-foreground-accent mb-4">
                 <li>Right to know what personal information we collect, use, and disclose</li>
                 <li>Right to request deletion of your personal information</li>
-                <li>Right to opt out of "sale" of personal information (we do not sell personal information)</li>
+                <li>Right to opt out of &quot;sale&quot; of personal information (we do not sell personal information)</li>
                 <li>Right to non-discrimination for exercising your privacy rights</li>
               </ul>
               <p className="text-foreground-accent">
@@ -260,7 +260,7 @@ export default function PrivacyPage() {
                 We may update this Privacy Policy from time to time. We will notify you of material changes by:
               </p>
               <ul className="list-disc list-inside space-y-2 text-foreground-accent mb-4">
-                <li>Posting the updated policy on our website with a new "Last Updated" date</li>
+                <li>Posting the updated policy on our website with a new &quot;Last Updated&quot; date</li>
                 <li>Sending an email notification to the address associated with your account</li>
                 <li>Providing notice through our Services</li>
               </ul>

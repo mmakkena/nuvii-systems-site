@@ -54,7 +54,7 @@ export default function TermsPage() {
             <section className="bg-white p-8 rounded-xl shadow-sm">
               <h2 className="text-2xl font-bold text-nuvii-text mb-4">Agreement to Terms</h2>
               <p className="text-foreground-accent mb-4">
-                These Terms of Service ("Terms") constitute a legally binding agreement between you (whether personally or on behalf of an entity, "you" or "Customer") and Nuvii Systems, Inc. ("Nuvii Systems," "we," "us," or "our") concerning your access to and use of the Nuvii Systems healthcare AI platform and related services (collectively, the "Services").
+                These Terms of Service (&quot;Terms&quot;) constitute a legally binding agreement between you (whether personally or on behalf of an entity, &quot;you&quot; or &quot;Customer&quot;) and Nuvii Systems, Inc. (&quot;Nuvii Systems,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) concerning your access to and use of the Nuvii Systems healthcare AI platform and related services (collectively, the &quot;Services&quot;).
               </p>
               <p className="text-foreground-accent mb-4">
                 By accessing or using the Services, you agree to be bound by these Terms. If you do not agree to these Terms, you may not access or use the Services.
@@ -113,7 +113,7 @@ export default function TermsPage() {
                 <li>Violate any applicable federal, state, local, or international law or regulation</li>
                 <li>Infringe upon or violate the intellectual property rights of Nuvii Systems or any third party</li>
                 <li>Transmit any material that is defamatory, obscene, or otherwise objectionable</li>
-                <li>Engage in any conduct that restricts or inhibits anyone's use or enjoyment of the Services</li>
+                <li>Engage in any conduct that restricts or inhibits anyone&apos;s use or enjoyment of the Services</li>
                 <li>Attempt to gain unauthorized access to any portion of the Services or any other systems or networks</li>
                 <li>Reverse engineer, decompile, disassemble, or otherwise attempt to discover the source code of the Services</li>
                 <li>Use any automated means to access the Services for any purpose without our express written permission</li>
@@ -139,7 +139,7 @@ export default function TermsPage() {
 
               <h3 className="text-xl font-semibold text-nuvii-text mb-3">Customer Data</h3>
               <p className="text-foreground-accent">
-                You retain all rights to your data, including PHI, that you input into or process through the Services ("Customer Data"). You grant us a limited license to use Customer Data solely to provide the Services to you. We will not use Customer Data for any other purpose, including training AI models, without your explicit consent.
+                You retain all rights to your data, including PHI, that you input into or process through the Services (&quot;Customer Data&quot;). You grant us a limited license to use Customer Data solely to provide the Services to you. We will not use Customer Data for any other purpose, including training AI models, without your explicit consent.
               </p>
             </section>
 
@@ -187,7 +187,7 @@ export default function TermsPage() {
 
               <h3 className="text-xl font-semibold text-nuvii-text mb-3">Price Changes</h3>
               <p className="text-foreground-accent mb-6">
-                We may change our pricing with 30 days' notice. Price changes will apply to subsequent billing periods after the notice period.
+                We may change our pricing with 30 days&apos; notice. Price changes will apply to subsequent billing periods after the notice period.
               </p>
 
               <h3 className="text-xl font-semibold text-nuvii-text mb-3">Late Payment</h3>
@@ -207,7 +207,7 @@ export default function TermsPage() {
 
               <h3 className="text-xl font-semibold text-nuvii-text mb-3">Termination for Convenience</h3>
               <p className="text-foreground-accent mb-6">
-                You may terminate your subscription at any time by providing written notice, effective at the end of your current billing period. We may terminate your subscription with 30 days' written notice.
+                You may terminate your subscription at any time by providing written notice, effective at the end of your current billing period. We may terminate your subscription with 30 days&apos; written notice.
               </p>
 
               <h3 className="text-xl font-semibold text-nuvii-text mb-3">Termination for Cause</h3>
@@ -240,7 +240,7 @@ export default function TermsPage() {
               <h3 className="text-xl font-semibold text-nuvii-text mb-3">Disclaimer</h3>
               <div className="bg-yellow-50 border-2 border-yellow-400 p-6 rounded-lg">
                 <p className="text-foreground-accent font-semibold mb-4">
-                  EXCEPT AS EXPRESSLY PROVIDED ABOVE, THE SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED.
+                  EXCEPT AS EXPRESSLY PROVIDED ABOVE, THE SERVICES ARE PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED.
                 </p>
                 <p className="text-foreground-accent mb-4">
                   WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.
@@ -309,7 +309,7 @@ export default function TermsPage() {
               <ul className="list-disc list-inside space-y-2 text-foreground-accent mb-6">
                 <li>The arbitration will be conducted in [location to be specified]</li>
                 <li>Each party will bear its own costs and fees, unless the arbitrator awards them to the prevailing party</li>
-                <li>The arbitrator's decision will be final and binding</li>
+                <li>The arbitrator&apos;s decision will be final and binding</li>
                 <li>Judgment on the award may be entered in any court of competent jurisdiction</li>
               </ul>
 

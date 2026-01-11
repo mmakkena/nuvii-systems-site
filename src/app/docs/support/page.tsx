@@ -284,7 +284,7 @@ export default function SupportPage() {
               </p>
               <ul className="list-disc list-inside space-y-2 text-foreground-accent mb-6">
                 <li><strong>Immediately email:</strong> <a href="mailto:security@nuviisystems.com" className="text-red-600 hover:text-red-700 font-semibold">security@nuviisystems.com</a></li>
-                <li>Include "SECURITY INCIDENT" in the subject line</li>
+                <li>Include &quot;SECURITY INCIDENT&quot; in the subject line</li>
                 <li>Provide as much detail as possible about the suspected incident</li>
                 <li>Do not include sensitive PHI in the initial report</li>
               </ul>

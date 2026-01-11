@@ -69,7 +69,7 @@ export default function SmartOnFhirPage() {
               </p>
               <ol className="list-decimal list-inside space-y-2 text-foreground-accent mb-6">
                 <li>EHR redirects user to Nuvii Systems launch URL with launch parameters</li>
-                <li>Nuvii Systems retrieves authorization endpoint from EHR's FHIR conformance statement</li>
+                <li>Nuvii Systems retrieves authorization endpoint from EHR&apos;s FHIR conformance statement</li>
                 <li>User is redirected to EHR authorization server for authentication</li>
                 <li>After approval, EHR redirects back to Nuvii Systems with authorization code</li>
                 <li>Nuvii Systems exchanges authorization code for access token</li>
@@ -82,7 +82,7 @@ export default function SmartOnFhirPage() {
               </p>
               <ol className="list-decimal list-inside space-y-2 text-foreground-accent">
                 <li>User accesses Nuvii Systems directly</li>
-                <li>Application discovers EHR's SMART configuration</li>
+                <li>Application discovers EHR&apos;s SMART configuration</li>
                 <li>User selects patient/context and authenticates with EHR</li>
                 <li>Authorization flow completes as described above</li>
               </ol>
