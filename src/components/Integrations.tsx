@@ -14,7 +14,7 @@ export default function Integrations() {
     },
     {
       category: "Workflow Tools",
-      items: ["Jira", "ServiceNow", "Internal queues"]
+      items: ["Jira", "ServiceNow"]
     }
   ];
 
