@@ -1,9 +1,21 @@
 export default function WhoItsFor() {
   const audiences = [
-    "Primary Care Groups (Medicare-focused)",
-    "CDI Specialists & Coding Teams",
-    "Revenue Cycle & Compliance Leaders",
-    "Health Systems with strict PHI controls"
+    {
+      title: "Primary Care Groups",
+      description: "Medicare-focused organizations managing risk-adjusted populations",
+    },
+    {
+      title: "CDI Specialists and Coding Teams",
+      description: "Improving documentation specificity and coding completeness",
+    },
+    {
+      title: "Revenue Cycle Leaders",
+      description: "Ensuring compliant reimbursement and audit readiness",
+    },
+    {
+      title: "Health Systems",
+      description: "Operating under strict PHI security and infrastructure requirements",
+    },
   ];
 
   return (
@@ -11,28 +23,24 @@ export default function WhoItsFor() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-8">
           <p className="text-lg md:text-xl text-foreground-accent font-medium">
-            Trusted by teams responsible for compliant documentation and revenue integrity:
+            Built for Healthcare Teams Responsible for Documentation Accuracy and Revenue Integrity
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {audiences.map((audience, index) => (
             <div
               key={index}
-              className="flex items-center justify-center gap-3 bg-hero-background px-6 py-4 rounded-xl border border-gray-100"
+              className="flex flex-col items-center gap-2 bg-hero-background px-6 py-4 rounded-xl border border-gray-100 text-center"
             >
-              <span className="text-nuvii-blue text-2xl flex-shrink-0">✓</span>
-              <span className="text-nuvii-text font-semibold text-center">
-                {audience}
+              <span className="text-nuvii-text font-semibold">
+                {audience.title}
+              </span>
+              <span className="text-sm text-foreground-accent">
+                {audience.description}
               </span>
             </div>
           ))}
-        </div>
-
-        <div className="text-center">
-          <p className="text-lg text-nuvii-text font-semibold">
-            Supporting teams accountable for clinical accuracy, compliant reimbursement, and audit readiness.
-          </p>
         </div>
       </div>
     </section>

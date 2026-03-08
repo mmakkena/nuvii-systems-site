@@ -7,14 +7,13 @@ export default function About() {
             About Nuvii Systems
           </h2>
           <p className="text-xl text-foreground-accent mb-4">
-            Nuvii Systems builds AI-powered healthcare automation products for regulated clinical and revenue workflows — improving documentation accuracy, coding quality, and revenue integrity without compromising PHI privacy.
+            Nuvii Systems builds AI platforms that bring clinical intelligence to healthcare documentation, coding, and revenue workflows.
           </p>
           <p className="text-xl text-foreground-accent mb-4">
-            Our flagship product, <strong className="text-nuvii-blue">Nuvii CDI Agent</strong>, brings intelligent
-            automation to documentation and coding teams through a deployable agent platform.
+            The <strong className="text-nuvii-blue">Nuvii Clinical Intelligence Platform</strong> analyzes clinical documentation to detect documentation gaps, coding opportunities, and risk capture insights — helping healthcare organizations improve coding accuracy and compliant reimbursement.
           </p>
           <p className="text-xl text-nuvii-text font-semibold">
-            We believe healthcare AI should be explainable, auditable, and deployed where your data already lives — not locked inside external SaaS platforms.
+            Designed for regulated healthcare environments, Nuvii delivers explainable AI that operates within your infrastructure, keeping PHI secure while enabling intelligent documentation and coding workflows.
           </p>
         </div>
       </div>
