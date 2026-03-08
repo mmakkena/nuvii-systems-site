@@ -66,7 +66,6 @@ export default function Header() {
             </div>
 
             <a href="#features" className="text-nuvii-text hover:text-nuvii-blue transition-colors">Features</a>
-            <a href="#pricing" className="text-nuvii-text hover:text-nuvii-blue transition-colors">Pricing</a>
 
             {/* Resources Dropdown */}
             <div className="relative"
