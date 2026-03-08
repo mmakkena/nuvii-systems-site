@@ -1,44 +1,47 @@
 export default function Features() {
   const layers = [
     {
-      title: "Understand the Clinical Note",
+      title: "Understand Clinical Documentation",
+      subtitle: "AI analyzes clinical notes to extract diagnoses, symptoms, severity, and relevant coding context.",
       icon: "🔹",
       features: [
         {
-          name: "ICD-10/CPT Semantic Search",
-          description: "Search using natural language, symptoms, or synonyms with pgvector-powered semantic matching."
+          name: "ICD-10 and CPT semantic search",
+          description: "Find relevant codes using natural language, symptoms, or clinical terminology."
         },
         {
-          name: "Real-time Document Analysis",
-          description: "Process clinical documentation in real-time to provide immediate insights and recommendations."
+          name: "Real-time documentation analysis",
+          description: "Evaluate clinical documentation and surface insights during documentation or review."
         }
       ]
     },
     {
       title: "Improve Documentation Quality",
+      subtitle: "Identify documentation gaps that impact coding accuracy and reimbursement.",
       icon: "🔹",
       features: [
         {
-          name: "Clinical Documentation Gap Detection",
-          description: "Detect missing specificity, acuity, comorbidities, medical necessity elements, and documentation required for accurate reimbursement."
+          name: "Clinical documentation gap detection",
+          description: "Detect missing specificity, severity, comorbidities, and medical necessity elements."
         },
         {
-          name: "CDI Query Generation",
-          description: "Automatically generate compliant, physician-friendly clarification queries that improve documentation quality and reduce denials."
+          name: "CDI query generation",
+          description: "Automatically generate compliant clarification queries to improve documentation quality."
         }
       ]
     },
     {
-      title: "Optimize Compliant Revenue",
+      title: "Optimize Coding and Revenue Integrity",
+      subtitle: "Support coding teams with clinically grounded coding insights.",
       icon: "🔹",
       features: [
         {
-          name: "Medical Coding Helper",
-          description: "Accurate ICD-10/CPT suggestions, code validation, and coding completeness checks powered by semantic search and clinical LLM reasoning."
+          name: "Medical coding assistance",
+          description: "Suggest ICD-10 and CPT codes and validate coding completeness."
         },
         {
-          name: "Revenue Optimization & HCC Insights",
-          description: "Identify under-coded conditions, missed severity, HCC opportunities, and documentation improvements to maximize compliant reimbursement."
+          name: "Risk capture and HCC insights",
+          description: "Identify under-documented conditions, missed severity, and potential HCC opportunities."
         }
       ]
     }
@@ -49,22 +52,29 @@ export default function Features() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-nuvii-text mb-6">
-            AI for Clinical Documentation, Coding & HCC
+            AI Clinical Intelligence for Documentation, Coding, and Risk Capture
           </h2>
-          <p className="text-xl text-nuvii-text font-semibold mb-4">
-            A single AI platform designed to understand clinical intent, improve documentation, and optimize compliant revenue.
+          <p className="text-xl text-foreground-accent mb-4 max-w-3xl mx-auto">
+            The Nuvii Clinical Intelligence Platform analyzes clinical documentation to identify documentation gaps, coding opportunities, and risk capture insights.
+          </p>
+          <p className="text-xl text-nuvii-text font-semibold mb-4 max-w-3xl mx-auto">
+            It acts as an intelligence layer that helps clinical, CDI, and coding teams understand documentation more accurately and improve compliant reimbursement.
           </p>
         </div>
 
         <div className="space-y-12">
           {layers.map((layer, index) => (
             <div key={index} className="max-w-5xl mx-auto">
-              <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center gap-3 mb-3">
                 <span className="text-3xl">{layer.icon}</span>
                 <h3 className="text-3xl font-bold text-nuvii-text">
                   {layer.title}
                 </h3>
               </div>
+
+              <p className="text-foreground-accent mb-3 ml-12">{layer.subtitle}</p>
+
+              <p className="text-sm font-semibold text-nuvii-blue uppercase tracking-wide mb-4 ml-12">Capabilities</p>
 
               <div className="grid md:grid-cols-2 gap-6">
                 {layer.features.map((feature, idx) => (
