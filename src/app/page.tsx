@@ -5,7 +5,7 @@ import About from '@/components/About';
 import Problem from '@/components/Problem';
 import Features from '@/components/Features';
 import ApiPlayground from '@/components/ApiPlayground';
-import HowItWorks from '@/components/HowItWorks';
+
 import Integrations from '@/components/Integrations';
 import Security from '@/components/Security';
 import Architecture from '@/components/Architecture';
@@ -25,7 +25,7 @@ export default function Home() {
       <Problem />
       <Features />
       <ApiPlayground />
-      <HowItWorks />
+
       <Integrations />
       <Architecture />
       <Security />

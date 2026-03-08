@@ -65,7 +65,7 @@ export default function Header() {
               )}
             </div>
 
-            <a href="#how-it-works" className="text-nuvii-text hover:text-nuvii-blue transition-colors">How It Works</a>
+            <a href="#features" className="text-nuvii-text hover:text-nuvii-blue transition-colors">Features</a>
             <a href="#security" className="text-nuvii-text hover:text-nuvii-blue transition-colors">Security</a>
             <a href="#pricing" className="text-nuvii-text hover:text-nuvii-blue transition-colors">Pricing</a>
 

@@ -44,7 +44,7 @@ export default function Footer() {
                   Documentation
                 </a>
               </li>
-              <li><a href="#how-it-works" className="hover:text-nuvii-blue transition-colors">How It Works</a></li>
+              <li><a href="#features" className="hover:text-nuvii-blue transition-colors">Features</a></li>
             </ul>
           </div>
 
