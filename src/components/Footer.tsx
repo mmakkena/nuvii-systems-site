@@ -81,7 +81,6 @@ export default function Footer() {
             <h4 className="font-semibold mb-4 text-white">Company</h4>
             <ul className="space-y-2 text-gray-400">
               <li><a href="#about" className="hover:text-nuvii-blue transition-colors">About Nuvii Systems</a></li>
-              <li><a href="#security" className="hover:text-nuvii-blue transition-colors">Security & Compliance</a></li>
               <li><a href="#" className="hover:text-nuvii-blue transition-colors">Contact</a></li>
               <li><a href="#" className="hover:text-nuvii-blue transition-colors">Blog</a></li>
             </ul>

@@ -7,8 +7,6 @@ import Features from '@/components/Features';
 import ApiPlayground from '@/components/ApiPlayground';
 
 import Integrations from '@/components/Integrations';
-import Security from '@/components/Security';
-import Architecture from '@/components/Architecture';
 import Pricing from '@/components/Pricing';
 import WhyNuvii from '@/components/WhyNuvii';
 import PartnersSection from '@/components/PartnersSection';
@@ -27,8 +25,6 @@ export default function Home() {
       <ApiPlayground />
 
       <Integrations />
-      <Architecture />
-      <Security />
       <Pricing />
       <WhyNuvii />
       <PartnersSection />
