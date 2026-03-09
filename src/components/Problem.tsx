@@ -40,7 +40,7 @@ export default function Problem() {
               <div className="text-3xl mb-3">📝</div>
               <h3 className="text-lg font-bold text-nuvii-text mb-2">Clinical Notes Are Difficult to Interpret</h3>
               <p className="text-sm text-foreground-accent">
-                EHRs capture documentation, but they do not interpret clinical intent, severity, or coding implications.
+                EHR systems capture documentation, but they do not interpret clinical intent, severity, or coding implications.
               </p>
             </div>
           </div>

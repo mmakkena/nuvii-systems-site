@@ -3,32 +3,32 @@ export default function WhyNuvii() {
     {
       icon: "🏥",
       title: "Built for Healthcare",
-      description: "Deep clinical and RCM expertise combined with modern AI."
+      description: "Deep clinical and revenue cycle expertise combined with modern AI designed for regulated environments."
     },
     {
       icon: "🧠",
       title: "Hybrid AI, Not a Black Box",
-      description: "Rules + AI + explainability built-in."
+      description: "Combines rules, AI models, and explainability so every output can be understood and defended."
     },
     {
       icon: "🔒",
-      title: "Secure & Compliant",
-      description: "Zero PHI egress with VPC-native or on-prem deployments."
+      title: "Secure and Compliant",
+      description: "Zero PHI egress with VPC-native or on-prem deployments that meet the strictest security requirements."
     },
     {
       icon: "🚀",
-      title: "Flexible & Fast Deployment",
-      description: "Deploy in managed environments, private VPC, or fully on-prem — and go live in days, not months."
+      title: "Flexible and Fast Deployment",
+      description: "Deploy in managed environments, private VPC, or fully on-prem and go live in days, not months."
     },
     {
       icon: "🧾",
-      title: "Built for CMS, Auditors & Clinicians",
-      description: "Outputs designed to stand up to scrutiny."
+      title: "Built for CMS, Auditors, and Clinicians",
+      description: "Every output includes evidence and rationale designed to stand up to payer and regulatory scrutiny."
     },
     {
       icon: "🧩",
-      title: "Modular & Extensible",
-      description: "Use one module or the entire CDI intelligence platform."
+      title: "Modular and Extensible",
+      description: "Use one capability or the entire clinical intelligence platform — adopt incrementally as needs grow."
     }
   ];
 

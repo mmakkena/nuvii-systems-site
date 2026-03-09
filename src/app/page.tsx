@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
+import PlatformFlow from '@/components/PlatformFlow';
 import WhoItsFor from '@/components/WhoItsFor';
 import About from '@/components/About';
 import Problem from '@/components/Problem';
@@ -18,6 +19,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Header />
       <Hero />
+      <PlatformFlow />
       <WhoItsFor />
       <About />
       <Problem />

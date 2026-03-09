@@ -28,7 +28,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4 text-white">Products</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#features" className="hover:text-nuvii-blue transition-colors">Nuvii CDI Agent</a></li>
+              <li><a href="#features" className="hover:text-nuvii-blue transition-colors">Clinical Intelligence Platform</a></li>
               <li>
                 <a href="https://nuvii.ai" target="_blank" rel="noopener noreferrer"
                   className="hover:text-nuvii-blue transition-colors inline-flex items-center gap-1">

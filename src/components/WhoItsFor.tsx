@@ -14,7 +14,7 @@ export default function WhoItsFor() {
     },
     {
       title: "Health Systems",
-      description: "Operating under strict PHI security and infrastructure requirements",
+      description: "Operating under strict PHI security and compliance requirements",
     },
   ];
 

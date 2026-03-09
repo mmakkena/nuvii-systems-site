@@ -8,10 +8,10 @@ export default function ApiPlayground() {
               Evaluate the Platform Live
             </h2>
             <p className="text-xl text-nuvii-text font-semibold mb-4">
-              Hands-on evaluation available in a controlled environment
+              Hands-on evaluation is available in a controlled environment
             </p>
             <p className="text-lg text-foreground-accent max-w-3xl mx-auto">
-              Explore Nuvii CDI Agent through interactive demos and APIs in our evaluation environment. All evaluations use sample data only and are isolated from production deployments.
+              Explore the Nuvii Clinical Intelligence Platform through interactive demos and APIs using sample data.
             </p>
           </div>
 
@@ -57,7 +57,7 @@ export default function ApiPlayground() {
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a href="https://nuvii.ai" target="_blank" rel="noopener noreferrer"
                 className="btn-primary inline-flex items-center justify-center gap-2">
-                Try the Interactive Evaluation (Evaluation Environment)
+                Try the Interactive Evaluation
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>

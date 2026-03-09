@@ -47,7 +47,7 @@ export default function Header() {
                 <div className="absolute top-full left-0 pt-2 w-56">
                   <div className="bg-white rounded-lg shadow-lg border border-gray-100 py-2">
                     <a href="#features" className="block px-4 py-2 text-nuvii-text hover:bg-hero-background transition-colors">
-                      Nuvii CDI Agent
+                      Clinical Intelligence Platform
                     </a>
                     <a href="https://nuvii.ai" target="_blank" rel="noopener noreferrer"
                       className="block px-4 py-2 text-nuvii-text hover:bg-hero-background transition-colors flex items-center justify-between">

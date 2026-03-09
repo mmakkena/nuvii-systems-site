@@ -5,12 +5,12 @@ import DemoForm from '@/components/DemoForm';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://nuviisystems.com'),
-  title: "Request an Enterprise Demo of Nuvii CDI Agent | Nuvii Systems",
-  description: "Request an enterprise demo of Nuvii CDI Agent to evaluate deployment, security, and clinical documentation workflows in customer-controlled environments.",
-  keywords: "enterprise demo, Nuvii CDI Agent, healthcare AI demo, VPC deployment demo, on-premise healthcare AI, CDI deployment, healthcare AI evaluation, zero PHI egress",
+  title: "Request an Enterprise Demo of Nuvii Clinical Intelligence Platform | Nuvii Systems",
+  description: "Request an enterprise demo of the Nuvii Clinical Intelligence Platform to evaluate deployment, security, and clinical documentation workflows in customer-controlled environments.",
+  keywords: "enterprise demo, Nuvii Clinical Intelligence Platform, healthcare AI demo, VPC deployment demo, on-premise healthcare AI, CDI deployment, healthcare AI evaluation, zero PHI egress",
   openGraph: {
-    title: "Request an Enterprise Demo of Nuvii CDI Agent | Nuvii Systems",
-    description: "Request an enterprise demo of Nuvii CDI Agent to evaluate deployment, security, and clinical documentation workflows in customer-controlled environments.",
+    title: "Request an Enterprise Demo of Nuvii Clinical Intelligence Platform | Nuvii Systems",
+    description: "Request an enterprise demo of the Nuvii Clinical Intelligence Platform to evaluate deployment, security, and clinical documentation workflows in customer-controlled environments.",
     url: "https://nuviisystems.com/demo",
     siteName: "Nuvii Systems",
     type: "website",
@@ -19,14 +19,14 @@ export const metadata: Metadata = {
         url: "/nuvii_logo.png",
         width: 1200,
         height: 630,
-        alt: "Nuvii CDI Agent Enterprise Demo",
+        alt: "Nuvii Clinical Intelligence Platform Enterprise Demo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Request an Enterprise Demo of Nuvii CDI Agent | Nuvii Systems",
-    description: "Request an enterprise demo of Nuvii CDI Agent to evaluate deployment, security, and clinical documentation workflows in customer-controlled environments.",
+    title: "Request an Enterprise Demo of Nuvii Clinical Intelligence Platform | Nuvii Systems",
+    description: "Request an enterprise demo of the Nuvii Clinical Intelligence Platform to evaluate deployment, security, and clinical documentation workflows in customer-controlled environments.",
     images: ["/nuvii_logo.png"],
   },
 };
@@ -40,7 +40,7 @@ export default function DemoPage() {
       <section className="pt-24 pb-6">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h1 className="text-3xl md:text-4xl font-bold text-nuvii-text mb-4 leading-tight">
-            Request an Enterprise Demo of Nuvii CDI Agent
+            Request an Enterprise Demo of Nuvii Clinical Intelligence Platform
           </h1>
           <p className="text-lg text-foreground-accent mb-4">
             See how Nuvii Systems deploys AI-powered CDI, coding, and revenue intelligence inside your own VPC or on-prem environment — with zero PHI egress.

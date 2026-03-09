@@ -15,7 +15,7 @@ export default function PartnersSection() {
           <div className="bg-hero-background rounded-2xl p-8 md:p-10 border border-gray-200">
             <p className="text-lg text-foreground-accent mb-6 leading-relaxed">
               <strong className="text-nuvii-text">Nuvii Partners</strong> provides fractional CTO and advisory
-              services to help teams adopt Nuvii Systems and modern healthcare AI platforms.
+              services to help healthcare organizations adopt Nuvii Systems and modern clinical AI platforms.
             </p>
 
             <div className="grid md:grid-cols-3 gap-6 mb-8">
@@ -28,7 +28,7 @@ export default function PartnersSection() {
               <div className="text-center">
                 <div className="text-3xl mb-2">⚙️</div>
                 <div className="font-semibold text-nuvii-text mb-1">Implementation</div>
-                <div className="text-sm text-foreground-accent">Hands-on deployment and integration support</div>
+                <div className="text-sm text-foreground-accent">Hands-on deployment, integration, and workflow configuration</div>
               </div>
 
               <div className="text-center">

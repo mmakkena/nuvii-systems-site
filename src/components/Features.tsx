@@ -58,7 +58,7 @@ export default function Features() {
             The Nuvii Clinical Intelligence Platform analyzes clinical documentation to identify documentation gaps, coding opportunities, and risk capture insights.
           </p>
           <p className="text-xl text-nuvii-text font-semibold mb-4 max-w-3xl mx-auto">
-            It acts as an intelligence layer that helps clinical, CDI, and coding teams understand documentation more accurately and improve compliant reimbursement.
+            It acts as an intelligence layer that helps CDI teams, coders, and revenue cycle leaders better understand documentation and improve compliant reimbursement.
           </p>
         </div>
 
