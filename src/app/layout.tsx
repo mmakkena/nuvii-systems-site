@@ -3,12 +3,12 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://nuviisystems.com'),
-  title: "Deployable Healthcare AI Platform for CDI & Coding | Nuvii Systems",
-  description: "Deployable healthcare AI platform for clinical documentation, medical coding, and revenue integrity. On-prem and VPC deployment with zero PHI egress.",
-  keywords: "deployable healthcare AI, CDI, clinical documentation improvement, medical coding, revenue integrity, zero PHI egress, on-prem deployment, VPC deployment, Medicare, primary care, HIPAA compliant, healthcare automation",
+  title: "Clinical Intelligence Platform for Documentation, Coding, and Revenue Integrity | Nuvii Systems",
+  description: "AI clinical intelligence platform that analyzes documentation to improve coding accuracy, risk capture, and compliant reimbursement. On-prem and VPC deployment with zero PHI egress.",
+  keywords: "clinical intelligence platform, healthcare AI, CDI, clinical documentation improvement, medical coding, revenue integrity, risk capture, HCC, zero PHI egress, on-prem deployment, VPC deployment, Medicare, primary care, HIPAA compliant",
   openGraph: {
-    title: "Deployable Healthcare AI Platform for CDI & Coding | Nuvii Systems",
-    description: "Deployable healthcare AI platform for clinical documentation, medical coding, and revenue integrity. On-prem and VPC deployment with zero PHI egress.",
+    title: "Clinical Intelligence Platform for Documentation, Coding, and Revenue Integrity | Nuvii Systems",
+    description: "AI clinical intelligence platform that analyzes documentation to improve coding accuracy, risk capture, and compliant reimbursement. On-prem and VPC deployment with zero PHI egress.",
     url: "https://nuviisystems.com",
     siteName: "Nuvii Systems",
     type: "website",
@@ -17,14 +17,14 @@ export const metadata: Metadata = {
         url: "/nuvii_logo.png",
         width: 1200,
         height: 630,
-        alt: "Nuvii Systems - Deployable Healthcare AI",
+        alt: "Nuvii Systems - Clinical Intelligence Platform",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Deployable Healthcare AI Platform for CDI & Coding | Nuvii Systems",
-    description: "Deployable healthcare AI platform for clinical documentation, medical coding, and revenue integrity. On-prem and VPC deployment with zero PHI egress.",
+    title: "Clinical Intelligence Platform for Documentation, Coding, and Revenue Integrity | Nuvii Systems",
+    description: "AI clinical intelligence platform that analyzes documentation to improve coding accuracy, risk capture, and compliant reimbursement. On-prem and VPC deployment with zero PHI egress.",
     images: ["/nuvii_logo.png"],
   },
 };
@@ -40,7 +40,7 @@ export default function RootLayout({
     "name": "Nuvii Systems",
     "url": "https://nuviisystems.com",
     "logo": "https://nuviisystems.com/nuvii_logo.png",
-    "description": "Deployable healthcare AI platform for clinical documentation, medical coding, and revenue integrity",
+    "description": "AI clinical intelligence platform for documentation, coding, and revenue integrity in healthcare",
     "industry": "Healthcare Technology",
     "foundingDate": "2024",
     "contactPoint": {
@@ -56,7 +56,7 @@ export default function RootLayout({
   const softwareApplicationSchema = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Nuvii CDI Agent",
+    "name": "Nuvii Clinical Intelligence Platform",
     "applicationCategory": "HealthcareApplication",
     "operatingSystem": "Linux, Cloud",
     "offers": {
@@ -65,14 +65,14 @@ export default function RootLayout({
       "priceCurrency": "USD",
       "description": "Enterprise pricing based on deployment model and usage"
     },
-    "description": "AI-powered clinical documentation improvement and medical coding platform with zero PHI egress, deployable on-prem, VPC, or air-gapped environments",
+    "description": "AI clinical intelligence platform that analyzes documentation to improve coding accuracy, risk capture, and compliant reimbursement with zero PHI egress",
     "featureList": [
-      "Clinical Documentation Improvement (CDI)",
-      "Medical Coding (ICD-10, CPT)",
-      "Revenue Integrity & HCC Optimization",
+      "Clinical Documentation Gap Detection",
+      "Medical Coding Assistance (ICD-10, CPT)",
+      "HCC and Risk Capture Insights",
       "Zero PHI Egress Deployment",
       "Explainable AI Outputs",
-      "EHR Integration"
+      "EHR and CDI Workflow Integration"
     ],
     "screenshot": "https://nuviisystems.com/nuvii_logo.png",
     "aggregateRating": {
@@ -85,8 +85,8 @@ export default function RootLayout({
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "Nuvii CDI Agent",
-    "description": "Deployable healthcare AI platform for clinical documentation, medical coding, and revenue integrity with zero PHI egress",
+    "name": "Nuvii Clinical Intelligence Platform",
+    "description": "AI clinical intelligence platform that analyzes documentation to improve coding accuracy, risk capture, and compliant reimbursement with zero PHI egress",
     "brand": {
       "@type": "Organization",
       "name": "Nuvii Systems"
