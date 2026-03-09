@@ -13,7 +13,7 @@ export default function About() {
             The <strong className="text-nuvii-blue">Nuvii Clinical Intelligence Platform</strong> analyzes clinical documentation to detect documentation gaps, coding opportunities, and risk capture insights — helping healthcare organizations improve coding accuracy and compliant reimbursement.
           </p>
           <p className="text-xl text-nuvii-text font-semibold">
-            Designed for regulated healthcare environments, Nuvii delivers explainable AI that operates within secure healthcare infrastructure while keeping PHI protected.
+            Designed for regulated healthcare environments, Nuvii delivers explainable AI that operates within secure healthcare infrastructure while keeping PHI fully protected.
           </p>
         </div>
       </div>

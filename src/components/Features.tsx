@@ -52,7 +52,7 @@ export default function Features() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-nuvii-text mb-6">
-            AI Clinical Intelligence for Documentation, Coding, and Risk Capture
+            AI Clinical Intelligence for Clinical Documentation, Coding, and Risk Capture
           </h2>
           <p className="text-xl text-foreground-accent mb-4 max-w-3xl mx-auto">
             The Nuvii Clinical Intelligence Platform analyzes clinical documentation to identify documentation gaps, coding opportunities, and risk capture insights.

@@ -6,7 +6,7 @@ export default function CTA() {
           Modernize Documentation, Coding, and Revenue Intelligence
         </h2>
         <p className="text-lg md:text-xl text-white/90 mb-8">
-          Improve coding accuracy, risk capture, and compliant reimbursement without compromising security or control.
+          Improve coding accuracy, increase risk capture, and strengthen compliant reimbursement — without compromising security or control.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
